@@ -6,11 +6,14 @@ cnt = 5
 while cnt != 0:
     num1 = random.randint(1,100)
     guess = int(input())
-    if guess != num1:
-        print('NOPE')
-        cnt -=1
     if guess == 0:
-        print('OK BYEBYE SEE YOU LATER')       
+        answer = input('really? you exit? [y/n]')
+        if answer == 'y':
+            break
+    if guess != num1:
+        print(f'NOPE: your chance {cnt}')
+        cnt -=1
+
     print(f'ANSWER : {num1}')
     print(f'YOUR ANSWER : {guess}')
 print('GAME OVER')
