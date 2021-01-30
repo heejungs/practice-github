@@ -1,3 +1,6 @@
+"""
+이 게임은 numguess게임으로 사용자가 컴퓨터가 낸 랜덤한 값을 맞추는 게임입니다
+"""
 import random
 
 num1 = random.randint(1,100)
